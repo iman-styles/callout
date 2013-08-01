@@ -1,0 +1,12 @@
+{
+  "name": "callout",
+  "main": "index.scss",
+  "version": "0.0.1",
+  "dependencies": {},
+  "styles": [
+    "index.scss"
+  ],
+  "files": [
+    "images/bg-rounded-diac-approved.png"
+  ]
+}

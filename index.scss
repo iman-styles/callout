@@ -1,0 +1,63 @@
+//$icon-image-path: "#{$component-path}/iman-styles-icons/icons" !default;
+$callout-image-path: "#{$component-path}/../local/iman-styles-callout/assets" !default;
+
+@function callout-path($path) {
+  @return "#{$callout-image-path}/#{$path}";
+}
+
+@function callout-url($path) {
+  @return url(callout-path($path));
+}
+
+// -------------------------------------------------------
+
+.callout-1 {
+  position: relative;
+
+  // IE8
+  .no-csstransforms & .callout-1__icon {
+    background: transparent callout-url('bg-rounded-diac-approved.png') 0 0 no-repeat;
+    height: 137px;
+    text-indent: -1000em;
+    width: 137px;
+  }
+
+  .no-csstransforms & .callout-1__icon .callout-1__label {
+    display: none;
+  }
+
+  .callout-1__icon {
+    border-radius: 75px;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+  }
+
+  .callout-1__icon .callout-1__label {
+    color: $purple;
+    display: block;
+    font-family: $font-family-roboto;
+    font-size: 13px;
+    line-height: 18px;
+    position: relative;
+    top: 35px;
+  }
+
+  .callout-1__label span {
+    color: #fff;
+    font-size: 21px;
+    line-height: 24px;
+    text-shadow: 0 -1px 1px rgba(#000, 0.3);
+  }
+
+  &:after {
+    border-radius: 75px;
+    border: 1px solid rgba(#fff, 0.7);
+    content: "";
+    height: 138px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 138px;
+  }
+}
