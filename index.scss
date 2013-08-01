@@ -1,5 +1,4 @@
-//$icon-image-path: "#{$component-path}/iman-styles-icons/icons" !default;
-$callout-image-path: "#{$component-path}/../local/iman-styles-callout/assets" !default;
+$callout-image-path: "#{$component-path}/iman-styles-callout/assets" !default;
 
 @function callout-path($path) {
   @return "#{$callout-image-path}/#{$path}";
