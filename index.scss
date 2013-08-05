@@ -26,6 +26,7 @@ $callout-image-path: "#{$component-path}/iman-styles-callout/assets" !default;
   }
 
   .callout-1__icon {
+    background: $green;
     border-radius: 75px;
     height: 150px;
     text-align: center;
