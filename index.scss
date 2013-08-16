@@ -61,3 +61,32 @@ $callout-image-path: "#{$component-path}/iman-styles-callout/assets" !default;
     width: 138px;
   }
 }
+
+//home page callout
+.callout-2 {
+  background: transparent callout-url('callout-2-bg.jpg') top center no-repeat;
+
+  .callout-2__content {
+    background: transparent callout-url('dark-opaque-bg.png');
+    color: #fff;
+    margin: 245px 0 100px;
+    padding: 30px;
+    position: relative;
+  }
+
+  .callout-2__trigger {
+    bottom: 30px;
+    position: absolute;
+    right: 30px;
+
+    .btn {
+      border-color: rgba(#000, 0.7);
+    }
+  }
+
+  .callout-2__diac {
+    bottom: -20px;
+    position: absolute;
+    right: 85px;
+  }
+}

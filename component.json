@@ -1,13 +1,15 @@
 {
   "name": "callout",
   "main": "index.scss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {},
   "styles": [
     "index.scss"
   ],
   "files": [
-    "assets/bg-rounded-diac-approved.png"
+    "assets/bg-rounded-diac-approved.png",
+    "assets/dark-opaque-bg.png",
+    "assets/callout-2-bg.jpg"
   ],
   "repo": "https://raw.github.com/iman-styles/callout"
 }
