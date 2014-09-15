@@ -13,59 +13,59 @@ $callout-image-path: "#{$component-path}/iman-styles-callout/assets" !default;
 .callout-1 {
   position: relative;
 
-  // IE8
-  .no-csstransforms & .callout-1__icon {
-    background: transparent callout-url('bg-rounded-diac-approved.png') 0 0 no-repeat;
-    height: 137px;
-    text-indent: -1000em;
-    width: 137px;
-  }
-
-  .no-csstransforms & .callout-1__icon .callout-1__label {
-    display: none;
-  }
-
   .callout-1__icon {
-    background: $green;
-    border-radius: 75px;
-    height: 150px;
+    background: transparent callout-url('iman-badge-blank.png') 0 0 no-repeat;
+    height: 166px;
     text-align: center;
-    width: 150px;
+    width: 158px;
   }
 
   .callout-1__icon .callout-1__label {
-    color: $purple;
+    color: $green;
     display: block;
     font-family: $font-family-roboto;
-    font-size: 13px;
+    font-size: 15.5px;
     line-height: 18px;
     position: relative;
     top: 35px;
   }
-
   .callout-1__label span {
     color: #fff;
-    font-size: 21px;
+    font-size: 15.7px;
     line-height: 24px;
-    text-shadow: 0 -1px 1px rgba(#000, 0.3);
+    text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.4);
+    font-weight: 500;
   }
-
-  &:after {
-    border-radius: 75px;
-    border: 1px solid rgba(#fff, 0.7);
-    content: "";
-    height: 138px;
-    left: 5px;
-    position: absolute;
-    top: 5px;
-    width: 138px;
+  .callout-1__label .line-1 {
+    font-size: 15.4px;
+    line-height: 1px;
+    color: #89c531;
   }
+  .callout-1__label .line-2 {
+    font-size: 18.6px;
+    line-height: 1px;
+    color: #89c531;
+  }
+  .callout-1__label .line-3 {
+    display: inline-block;
+    padding: 23px 0 5px 0;
+    font-size: 11.8px;
+    line-height: 1px;
+    color: #d0d0d2;
+    color: rgba(255,255,255,0.7);
+  }
+  .callout-1__label .line-4 {
+    font-size: 16.6px;
+    line-height: 1px;
+    color: #d0d0d2;
+    color: rgba(255,255,255,0.7);
+  } 
 }
 
 //home page callout
 .callout-2 {
   background: transparent callout-url('callout-2-bg.jpg') top center no-repeat;
-
+  
   .callout-2__content {
     background: transparent callout-url('dark-opaque-bg.png');
     color: #fff;
@@ -78,15 +78,11 @@ $callout-image-path: "#{$component-path}/iman-styles-callout/assets" !default;
     bottom: 30px;
     position: absolute;
     right: 30px;
-
-    .btn {
-      border-color: rgba(#000, 0.7);
-    }
   }
 
   .callout-2__diac {
-    bottom: -20px;
+    bottom: -10px;
     position: absolute;
-    right: 85px;
+    right: 78px;
   }
 }
